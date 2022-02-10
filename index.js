@@ -15,6 +15,6 @@ app.get("/",(req,res)=>{
 app.use('/asesores', asesores);
 app.use('/apartamentos', apartamentos);
 
-app.listen(3000,()=>{
+app.listen(process.env.PORT || 3000,()=>{
    console.log("Estoy funcionando como servidor http en la ruta http://localhost:3000") 
 })
